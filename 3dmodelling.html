@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Coding Projects</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="https://kit.fontawesome.com/b0bdd913de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/3dmodelling.css" />
+  </head>
+  <body>
+    <div class="banner-container">
+      <i onclick="showNav()" class="fa-bars fa-solid menu-button"></i>
+      <div id="nav" class="nav">
+        <div class="nav-header">
+          <i onclick="hideNav()" class="fa-solid fa-xmark fa-xl menu-button"></i>
+          <img src="images/Profile-Icon-tp.png" alt="A Bit of Sole Logo" />
+        </div>
+        <div class="nav-items">
+          <a href="#">Home</a>
+          <a href="coding.html">Coding</a>
+          <a href="3dmodelling.html">3D Modeling</a>
+          <a href="sneakers.html">Custom Sneakers</a>
+        </div>
+        <div class="line"></div>
+        <div class="socials">
+          <a href="https://github.com/delanohendrix"><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/delano-hendrix-3257111a0/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.youtube.com/@ABitofSole"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/bitofsole/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="content-container">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="images/3d model sc/Switchblade2.jpg"
+              alt="A Render of the Switchblade 600 Model" />
+            <div class="info">
+              <h4 class="info-title">Switchblade 600 Drone</h4>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Description</p>
+            <span id="preview" class="preview-button">Preview Model</span>
+          </div>
+        </div>
+        <div class="modal">
+          <span class="close">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <div class="model-container">
+            <model-viewer
+              class="modal-content"
+              src="assets/3D Objects/Switchblade600.gltf"
+              alt="Switchblade 600 Drone"
+              environment-image="assets/3D Objects/Over Clouds.hdr"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/assets/3D Objects/Switchblade600.gltf">
+              <div class="controls">
+                <div>
+                  <label for="variant">Variant: </label>
+                  <select id="variant"></select>
+                </div>
+              </div>
+            </model-viewer>
+          </div>
+          <div id="caption">Switchblade 600 Drone</div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/3d model sc/ADM-160.jpg" alt="A Render of the ADM-160 MALD Model" />
+            <div class="info">
+              <h4 class="info-title">ADM-160 MALD</h4>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Description</p>
+            <a id="preview2" class="preview-button" href="#">Preview Model</a>
+          </div>
+        </div>
+        <div class="modal">
+          <span class="close">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <div class="model-container">
+            <model-viewer
+              class="modal-content"
+              src="assets/3D Objects/ADM-160 MALD.gltf"
+              alt="ADM-160 MALD"
+              environment-image="assets/3D Objects/Over Clouds.hdr"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/assets/3D Objects/ADM-160 MALD.gltf">
+            </model-viewer>
+          </div>
+          <div id="caption">ADM-160 MALD</div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/3d model sc/Hexacopter.jpg" alt="A Render of the Hexacopter Model" />
+            <div class="info">
+              <h4 class="info-title">Hexacopter Drone</h4>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Description</p>
+            <a id="preview2" class="preview-button" href="#">Preview Model</a>
+          </div>
+        </div>
+        <div class="modal">
+          <span class="close">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <div class="model-container">
+            <model-viewer
+              class="modal-content"
+              src="assets/3D Objects/Hexacopter.gltf"
+              alt="Hexacopter"
+              environment-image="assets/3D Objects/Over Clouds.hdr"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/assets/3D Objects/Hexacopter.gltf">
+            </model-viewer>
+          </div>
+          <div id="caption">Hexacopter Drone</div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/3d model sc/Octocopter3.jpg" alt="A Render of the Hexacopter Model" />
+            <div class="info">
+              <h4 class="info-title">Octocopter Drone</h4>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Description</p>
+            <a id="preview2" class="preview-button" href="#">Preview Model</a>
+          </div>
+        </div>
+        <div class="modal">
+          <span class="close">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <div class="model-container">
+            <model-viewer
+              class="modal-content"
+              src="assets/3D Objects/Octocopter.gltf"
+              alt="Hexacopter"
+              environment-image="assets/3D Objects/Over Clouds.hdr"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/assets/3D Objects/Octocopter.gltf">
+            </model-viewer>
+          </div>
+          <div id="caption">Octocopter Drone</div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/3d model sc/TB2.png" alt="A Render of the Hexacopter Model" />
+            <div class="info">
+              <h4 class="info-title">Bayraktar TB2 Drone</h4>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Description</p>
+            <a id="preview2" class="preview-button" href="#">Preview Model</a>
+          </div>
+        </div>
+        <div class="modal">
+          <span class="close">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <div class="model-container">
+            <model-viewer
+              class="modal-content"
+              src="assets/3D Objects/Bayraktar TB2.gltf"
+              alt="Bayraktar TB2"
+              environment-image="assets/3D Objects/Over Clouds.hdr"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/assets/3D Objects/Bayraktar TB2.gltf">
+            </model-viewer>
+          </div>
+          <div id="caption">Bayraktar TB2 Drone</div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/3d model sc/Scythe.png" alt="A Render of the Scythe Model" />
+            <div class="info">
+              <h4 class="info-title">Mech Scythe</h4>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Description</p>
+            <a id="preview2" class="preview-button" href="#">Preview Model</a>
+          </div>
+        </div>
+        <div class="modal">
+          <span class="close">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <div class="model-container">
+            <model-viewer
+              class="modal-content"
+              src="assets/3D Objects/Scythe.glb"
+              alt="Bayraktar TB2"
+              environment-image="assets/3D Objects/Over Clouds.hdr"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/assets/3D Objects/Scythe.glb">
+            </model-viewer>
+          </div>
+          <div id="caption">Mech Scythe</div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="assets/js/3dmodelling.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
