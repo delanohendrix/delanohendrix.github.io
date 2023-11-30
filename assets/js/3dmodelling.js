@@ -19,12 +19,14 @@ const span = document.getElementsByClassName("close");
 for (let i = 0; i < button.length; i++) {
   button[i].addEventListener("click", function () {
     modal[i].style.display = "block";
+    document.body.style.overflowY = "hidden";
   });
 }
 
 for (let i = 0; i < span.length; i++) {
   span[i].addEventListener("click", function () {
     modal[i].style.display = "none";
+    document.body.style.overflowY = "visible";
   });
 }
 
@@ -32,6 +34,7 @@ for (let i = 0; i < button.length; i++) {
   modal[i].addEventListener("click", function () {
     if (event.target == modal[i]) {
       modal[i].style.display = "none";
+      document.body.style.overflowY = "visible";
     }
   });
 }
