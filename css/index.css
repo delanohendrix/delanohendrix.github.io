@@ -148,7 +148,7 @@ main {
 }
 
 .parallax {
-  background-image: url("../images/bg-img.jpg");
+  background-image: url("../../images/bg-img.jpg");
   min-height: 100vh;
   width: 100%;
   display: flex;
