@@ -9,3 +9,13 @@ function hideNav() {
   nav.classList.toggle("show");
   document.body.style.overflowY = "visible";
 }
+
+const intro = document.getElementById("intro");
+const introAddition = document.querySelector(".intro-addition");
+
+intro.addEventListener("animationend", () => {
+  intro.addEventListener("animationend", () => {
+    introAddition.style.opacity = "1";
+    introAddition.classList.add("update");
+  });
+});

@@ -1,38 +1,179 @@
 @import "variables";
 @import "styles";
+@import "typed";
 
 main {
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  img {
+}
+.parallax {
+  background-image: url("../../images/bg-img.jpg");
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+  // padding-top: 55px;
+  .caption {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+    max-width: 375px;
+    p {
+      text-shadow: 0px 5px 7px rgba(0, 0, 0, 0.42);
+    }
+    .intro {
+      color: white;
+      padding-bottom: 5px;
+      @include typed(
+        "Welcome!",
+        1.2,
+        (
+          iterations: 1,
+          caret: false,
+          end-on: "I'm Delano",
+        )
+      );
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation-name: logoFade;
+      opacity: 0;
+      animation: arrowFade 2s forwards;
+      animation-delay: 7.5s;
+    }
+    .logo img {
+      max-width: 75%;
+      opacity: 0.95;
+    }
+    @keyframes logoFade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .intro-addition {
+      color: white;
+      opacity: 0;
+      @include typed(
+        "aka A Bit of Sole",
+        "Frontend Developer",
+        "3D Model Artist",
+        "Sneaker Customizer",
+        1.3,
+        (
+          name: "intro-addition",
+          caret-width: 5px,
+          caret-space: 2px,
+        )
+      );
+    }
+    .intro-addition::before {
+      animation-play-state: paused;
+    }
+    .update::before {
+      animation-play-state: running;
+    }
+  }
+  .arrow {
+    display: flex;
+    justify-content: space-around;
+    color: white;
     width: 100%;
-    margin: 75px 0 20px 0;
-    display: block;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.42);
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    font-size: 28px;
+    opacity: 0;
+    animation: arrowFade 3s forwards;
+    animation-delay: 10s;
+    i {
+      opacity: 0.1;
+    }
   }
-  .content-container {
-    display: grid;
-    grid-template-columns: repeat(4, 70px);
-    gap: 0px 16px;
-    grid-auto-flow: row;
-    margin: 0 16px;
+  @keyframes arrowFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
-.about-me {
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0px 16px;
+  grid-auto-flow: row;
+  margin: 0 16px;
+}
+
+.info {
   grid-column: 1/5;
   display: flex;
   flex-direction: column;
+  padding-top: 24px;
+  gap: 3rem;
   h2 {
-    margin: 0 auto;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about-me {
+    p {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+  }
+  .resume h2 a {
+    color: #384956;
   }
 }
-.skills {
-  grid-column: 1/5;
+.skills-grid {
   display: flex;
   flex-direction: column;
-  h2 {
-    margin: 0 auto;
+  gap: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+  .grid-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .icon {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #384956;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    img {
+      width: 40px;
+    }
+    p {
+      font-weight: 600;
+    }
   }
 }

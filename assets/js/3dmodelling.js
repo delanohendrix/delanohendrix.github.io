@@ -1,4 +1,5 @@
 // Accordion
+const cardContainer = document.getElementsByClassName(".card-container");
 const cardHeaders = document.querySelectorAll(".card-header");
 
 cardHeaders.forEach((cardHeader) => {
@@ -52,11 +53,6 @@ modelViewerVariants.addEventListener("load", () => {
     select.appendChild(option);
   }
 });
-
-// const option = document.createElement("option");
-// option.value = "default";
-// option.textContent = "Default";
-// select.appendChild(option);
 
 select.addEventListener("input", (Event) => {
   modelViewerVariants.variantName = Event.target.value === "default" ? null : Event.target.value;
