@@ -5,14 +5,14 @@ main {
   display: flex;
   position: relative;
   justify-content: center;
-  .content-container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 0px 16px;
-    grid-auto-flow: row;
-    margin: 0 16px;
-    margin-top: 75px;
-  }
+}
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0px 16px;
+  grid-auto-flow: row;
+  margin: 0 16px;
+  margin-top: 75px;
 }
 .faq-button {
   background-color: #384956;
@@ -58,28 +58,107 @@ main {
   }
 }
 
-.card-container {
+.gallery-container {
   grid-column: 1/5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // gap: 5px;
   align-items: center;
-}
-.card {
-  max-width: 350px;
-  overflow: hidden;
-  // margin-top: 20px;
-  display: flex;
-  height: fit-content;
-  margin: 20px 5px 0;
-  border-radius: 20px;
-  background-color: #d9d9d9;
-  box-shadow: 0px 5px 7px 2px rgba(0, 0, 0, 0.35);
+  flex-direction: column;
+
+  .image-container {
+    overflow: hidden;
+    display: flex;
+    height: fit-content;
+    margin: 20px 0px 0;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    box-shadow: 0px 5px 7px 2px rgba(0, 0, 0, 0.35);
+  }
 
   .image {
     max-width: 100%;
     object-fit: contain;
     display: block;
+  }
+}
+.navbar {
+  transform: translate(0%);
+}
+
+@media all and (min-width: 1130px) {
+  .content-container {
+    grid-template-columns: repeat(12, 72px);
+    gap: 0px 24px;
+    margin: 50px 0;
+  }
+  .gallery-container {
+    grid-column: 1/13;
+    flex-direction: row;
+    .column {
+      flex: 50%;
+      padding: 0 8px;
+    }
+    .column:last-of-type {
+      padding-top: 44px;
+    }
+    .image-container:hover {
+      scale: 1.01;
+    }
+  }
+  .faq-popup {
+    bottom: 11.5%;
+    left: 23.5%;
+    right: 9.5%;
+    height: 585px;
+    .faq-container {
+      padding: 25px 45px;
+      h3 {
+        font-size: 36px;
+      }
+      .faq-heading {
+        font-size: 22px;
+      }
+      .faq-answer {
+        font-size: 20px;
+      }
+    }
+  }
+  .faq-button {
+    bottom: 7.5%;
+    right: 7.5%;
+    padding: 18px 20px;
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 767px) and (max-width: 1129px) {
+  .content-container {
+    grid-template-columns: repeat(8, auto);
+    gap: 0px 24px;
+    margin: 75px 0;
+  }
+  .gallery-container {
+    grid-column: 1/9;
+    flex-direction: row;
+    .column {
+      flex: 50%;
+      padding: 0 8px;
+    }
+    .column:last-of-type {
+      padding-top: 44px;
+    }
+  }
+  .faq-button {
+    bottom: 70px;
+    right: 3%;
+    padding: 12px 14px;
+  }
+  .faq-popup {
+    bottom: 85px;
+    height: 565px;
+    right: 4.5%;
+    left: 4.5%;
+    height: 500px;
   }
 }

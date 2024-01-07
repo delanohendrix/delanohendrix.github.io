@@ -1,21 +1,11 @@
 function showNav() {
   var nav = document.getElementById("nav");
-  nav.classList.toggle("show");
+  nav.style.transform = "translate(0%)";
   document.body.style.overflowY = "hidden";
 }
 
 function hideNav() {
   var nav = document.getElementById("nav");
-  nav.classList.toggle("show");
+  nav.style.transform = "translate(-150%)";
   document.body.style.overflowY = "visible";
 }
-
-const intro = document.getElementById("intro");
-const introAddition = document.querySelector(".intro-addition");
-
-intro.addEventListener("animationend", () => {
-  intro.addEventListener("animationend", () => {
-    introAddition.style.opacity = "1";
-    introAddition.classList.add("update");
-  });
-});

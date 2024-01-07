@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Custom Sneakers by A Bit of Sole</title>
+    <link rel="icon" type="image/x-icon" href="/images/Profile-Icon-tp.png" />
     <script src="https://kit.fontawesome.com/b0bdd913de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/sneakers.css" />
   </head>
   <body>
-    <div class="banner-container">
-      <i onclick="showNav()" class="fa-bars fa-solid menu-button"></i>
-      <div id="nav" class="nav">
-        <div class="nav-header">
-          <i onclick="hideNav()" class="fa-solid fa-xmark fa-xl menu-button"></i>
-          <img src="images/Profile-Icon-tp.png" alt="A Bit of Sole Logo" />
+    <nav id="nav-banner" class="navbar">
+      <div class="nav-container">
+        <span><i onclick="showNav()" class="fa-bars fa-solid menu-button"></i></span>
+        <div id="nav" class="nav-items">
+          <span><i onclick="hideNav()" class="fa-solid fa-xmark fa-xl menu-button"></i></span>
+          <div class="links">
+            <span><a href="index.html">Home</a></span>
+            <span><a href="coding.html">Coding</a></span>
+            <span><a href="3dmodeling.html">3D Modeling</a></span>
+            <span><a href="sneakers.html">Custom Sneakers</a></span>
+          </div>
+          <div class="line"></div>
+          <div class="socials">
+            <a href="https://github.com/delanohendrix"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:delanohendrix@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/delano-hendrix-3257111a0/"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.youtube.com/@ABitofSole"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/bitofsole/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
-        <div class="nav-items">
-          <a href="index.html">Home</a>
-          <a href="coding.html">Coding</a>
-          <a href="3dmodeling.html">3D Modeling</a>
-          <a href="sneakers.html">Custom Sneakers</a>
-        </div>
-        <div class="line"></div>
-        <div class="socials">
-          <a href="https://github.com/delanohendrix"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:delanohendrix@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/delano-hendrix-3257111a0/"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://www.youtube.com/@ABitofSole"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/bitofsole/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+        <a class="nav-logo" href="index.html">
+          <img src="images/Profile-Icon-tp.png" alt="" />
+        </a>
       </div>
-    </div>
+    </nav>
     <main>
       <div class="content-container">
-        <div class="card-container">
-          <div class="card">
+        <div class="gallery-container">
+          <div class="column">
             <div class="image-container">
               <a href="https://www.youtube.com/watch?v=mHQ_S_qQUMY">
                 <img
@@ -46,18 +51,6 @@
                   alt="Air Jordan 1 Mid Monochrome Splatter Custom" />
               </a>
             </div>
-          </div>
-          <div class="card">
-            <div class="image-container">
-              <a href="https://www.youtube.com/watch?v=wVhjJStpdTU">
-                <img
-                  class="image"
-                  src="images/sneakers/AF1-Fade.jpg"
-                  alt="Air Force 1 Fade/Gradient Custom" />
-              </a>
-            </div>
-          </div>
-          <div class="card">
             <div class="image-container">
               <a href="#">
                 <img
@@ -67,7 +60,16 @@
               </a>
             </div>
           </div>
-          <div class="card">
+          <div class="column">
+            <div class="image-container">
+              <a href="https://www.youtube.com/watch?v=wVhjJStpdTU">
+                <img
+                  class="image"
+                  src="images/sneakers/AF1-Fade.jpg"
+                  alt="Air Force 1 Fade/Gradient Custom" />
+              </a>
+            </div>
+
             <div class="image-container">
               <a href="#">
                 <img
@@ -86,6 +88,11 @@
             <p class="faq-answer">
               The complete price is dependent on what work you would like done. <br />Labor ranges
               from $150 - $200+ not including the sneakers and shipping.
+            </p>
+            <h4 class="faq-heading">Are you able to do logos, names, etc?</h4>
+            <p class="faq-answer">
+              Yes! For if provided an image (png, jpeg, svg), I can create a stencil to use on your
+              custom.
             </p>
             <h4 class="faq-heading">What is the average turnaround time?</h4>
             <p class="faq-answer">
