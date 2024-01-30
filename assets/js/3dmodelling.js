@@ -1,7 +1,6 @@
 // Accordion
 const cardContainer = document.getElementsByClassName(".card-container");
 const cardHeaders = document.querySelectorAll(".card-header");
-
 cardHeaders.forEach((cardHeader) => {
   cardHeader.addEventListener("click", () => {
     if (cardHeader.classList.contains("active")) {

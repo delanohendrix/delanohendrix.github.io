@@ -1171,12 +1171,14 @@ main {
 }
 .info .about-me {
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
-.info .about-me p {
+.info .about-me .bio p {
   font-size: 18px;
   padding: 0 10px;
 }
-.info .resume h2 a {
+.info .resume a {
   color: #384956;
 }
 

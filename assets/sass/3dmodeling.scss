@@ -68,7 +68,7 @@ main {
   .card-body {
     display: flex;
     flex-direction: column;
-    max-height: 0;
+    height: 0;
     gap: 15px;
     transition: all 0.2s ease-in-out;
 
@@ -93,7 +93,7 @@ main {
     }
   }
   .card-header.active + .card-body {
-    max-height: 350px;
+    height: 350px;
   }
   .card-header.active .fa-angle-down {
     transform: rotate(180deg);
@@ -200,6 +200,52 @@ main {
   }
   .card-container {
     grid-column: 1/13;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 350px;
+    height: 631px;
+    .card-header,
+    .card-header.active {
+      flex-direction: column;
+      height: 300px;
+      box-shadow: none;
+      cursor: default;
+      img {
+        width: 100%;
+        height: 230px;
+      }
+      .info {
+        width: 100%;
+        h4 {
+          width: 100%;
+          text-align: center;
+          font-size: 28px;
+        }
+        .fa-angle-down {
+          display: none;
+        }
+      }
+    }
+    .card-body {
+      height: 350px;
+      p {
+        height: 230px;
+        padding-top: 10px;
+      }
+      .preview-button {
+        margin: 20px auto;
+      }
+    }
+  }
+  .modal {
+    .modal-content {
+      max-width: 1600px;
+    }
+    #caption {
+      font-size: 26px;
+    }
   }
 }
 
@@ -211,5 +257,51 @@ main {
   }
   .card-container {
     grid-column: 1/9;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 350px;
+    height: 631px;
+    .card-header,
+    .card-header.active {
+      flex-direction: column;
+      height: 300px;
+      box-shadow: none;
+      cursor: default;
+      img {
+        width: 100%;
+        height: 230px;
+      }
+      .info {
+        width: 100%;
+        h4 {
+          width: 100%;
+          text-align: center;
+          font-size: 28px;
+        }
+        .fa-angle-down {
+          display: none;
+        }
+      }
+    }
+    .card-body {
+      height: 350px;
+      p {
+        height: 230px;
+        padding-top: 10px;
+      }
+      .preview-button {
+        margin: 20px auto;
+      }
+    }
+  }
+  .modal {
+    .modal-content {
+      max-width: 1130px;
+    }
+    #caption {
+      font-size: 26px;
+    }
   }
 }

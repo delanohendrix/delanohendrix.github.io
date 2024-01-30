@@ -143,12 +143,16 @@ main {
   }
   .about-me {
     margin: 0 auto;
-    p {
-      font-size: 18px;
-      padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    .bio {
+      p {
+        font-size: 18px;
+        padding: 0 10px;
+      }
     }
   }
-  .resume h2 a {
+  .resume a {
     color: #384956;
   }
 }
