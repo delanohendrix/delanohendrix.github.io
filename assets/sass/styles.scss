@@ -137,6 +137,22 @@ footer {
   height: 40px;
   width: 100%;
   margin-top: 25px;
+  .footer-social {
+    display: block;
+    margin-right: 5px;
+    font-size: 24px;
+    float: right;
+    p {
+      display: none;
+    }
+    a {
+      color: white;
+      padding-right: 15px;
+    }
+    a:hover {
+      color: lightblue;
+    }
+  }
 }
 
 @media all and (min-width: 685px) {
@@ -193,5 +209,24 @@ footer {
   footer {
     position: sticky;
     top: 100%;
+    .footer-social {
+      display: block;
+      margin: 0px 25px 0px 0;
+      font-size: 24px;
+      float: right;
+      p {
+        display: inline-flex;
+        padding-right: 10px;
+        color: white;
+        font-weight: 600;
+      }
+      a {
+        color: white;
+        padding-right: 15px;
+      }
+      a:hover {
+        color: lightblue;
+      }
+    }
   }
 }

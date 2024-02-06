@@ -42,7 +42,7 @@
             </div>
           </div>
           <a class="nav-logo" href="index.html">
-            <img src="images/Profile-Icon-tp.png" alt="" />
+            <img src="images/Logo-flame2.gif" alt="" />
           </a>
         </div>
       </nav>
@@ -244,6 +244,44 @@
           </div>
           <div class="card">
             <div class="card-header">
+              <img src="images/3d model sc/Muscles.png" alt="A Render of the Muscles and Tendons" />
+              <div class="info">
+                <h4 class="info-title">Hip Muscles and Tendons</h4>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                These models were from the first project of my internship. Our teams responsibility
+                in the project was to create assets for a Virtual Reality Hip Replacement Surgery
+                simulation, to be used by medical students for practice. We retopologized and
+                textured real-life scans. Included are: Rectus Femoris (Muscle and Tendon),
+                Sartorius Tendon, Vastus Lateralis Muscle, Semimembranosus Tendon, Pectineus Tendon,
+                and Gracilis Muscle.
+              </p>
+              <a id="preview2" class="preview-button" href="#">Preview Model</a>
+            </div>
+            <div class="modal">
+              <span class="close">
+                <i class="fa-solid fa-x"></i>
+              </span>
+              <div class="model-container">
+                <model-viewer
+                  class="modal-content"
+                  src="assets/3D Objects/MusclesTendons.glb"
+                  alt="Hip Muscles and Tendons"
+                  environment-image="assets/3D Objects/Over Clouds.hdr"
+                  auto-rotate
+                  camera-controls
+                  ar
+                  ios-src="assets/assets/3D Objects/Scythe.glb">
+                </model-viewer>
+              </div>
+              <div id="caption">Hip Muscles and Tendons</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
               <img src="images/3d model sc/Scythe.png" alt="A Render of the Scythe Model" />
               <div class="info">
                 <h4 class="info-title">Mech Scythe</h4>
@@ -282,7 +320,18 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-social">
+        <p>Connect with me:</p>
+        <a href="https://github.com/delanohendrix"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:delanohendrix@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/delano-hendrix-3257111a0/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.youtube.com/@ABitofSole"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/bitofsole/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
     <script type="module" src="assets/js/3dmodelling.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

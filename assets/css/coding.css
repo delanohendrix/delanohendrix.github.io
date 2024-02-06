@@ -144,6 +144,22 @@ footer {
   width: 100%;
   margin-top: 25px;
 }
+footer .footer-social {
+  display: block;
+  margin-right: 5px;
+  font-size: 24px;
+  float: right;
+}
+footer .footer-social p {
+  display: none;
+}
+footer .footer-social a {
+  color: white;
+  padding-right: 15px;
+}
+footer .footer-social a:hover {
+  color: lightblue;
+}
 
 @media all and (min-width: 685px) {
   .nav-container {
@@ -199,6 +215,25 @@ footer {
   footer {
     position: sticky;
     top: 100%;
+  }
+  footer .footer-social {
+    display: block;
+    margin: 0px 25px 0px 0;
+    font-size: 24px;
+    float: right;
+  }
+  footer .footer-social p {
+    display: inline-flex;
+    padding-right: 10px;
+    color: white;
+    font-weight: 600;
+  }
+  footer .footer-social a {
+    color: white;
+    padding-right: 15px;
+  }
+  footer .footer-social a:hover {
+    color: lightblue;
   }
 }
 main {
