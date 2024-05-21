@@ -68,7 +68,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 
   .image-container {
